@@ -1,0 +1,32 @@
+.flash{
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+.info{
+  background-color: blue;
+}
+.warning{
+  background-color: orange;
+}
+.alert{
+  background-color: red;
+}
+input{
+  display: block;
+}
+.block{
+ width: 90%;
+ margin: 0 auto;
+}
+.image_block{
+  display: inline-block;
+  text-align: center;
+  width: 40%;
+}
+.image_block:nth-of-type(odd){
+  float: left;
+}
+.image_block:nth-of-type(even){
+  float: right;
+}

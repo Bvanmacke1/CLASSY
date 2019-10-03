@@ -1,0 +1,1 @@
+<img src="img/iceland.jpg" alt="ice">

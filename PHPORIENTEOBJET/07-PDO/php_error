@@ -1,0 +1,71 @@
+[01-Oct-2019 17:06:01 Europe/Berlin] Connection DB
+[02-Oct-2019 09:09:56 Europe/Berlin] Connection DB
+[02-Oct-2019 09:14:05 Europe/Berlin] Connection DB
+[02-Oct-2019 09:14:31 Europe/Berlin] Connection DB
+[02-Oct-2019 09:27:11 Europe/Berlin] Connection DB
+[02-Oct-2019 09:27:12 Europe/Berlin] Connection DB
+[02-Oct-2019 09:27:20 Europe/Berlin] PHP Warning:  Division by zero in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/exception.php on line 17
+[02-Oct-2019 09:30:06 Europe/Berlin] PHP Warning:  Division by zero in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/exception.php on line 19
+[02-Oct-2019 09:30:07 Europe/Berlin] PHP Warning:  Division by zero in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/exception.php on line 19
+[02-Oct-2019 09:30:57 Europe/Berlin] PHP Warning:  Division by zero in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/exception.php on line 19
+[02-Oct-2019 09:30:58 Europe/Berlin] PHP Warning:  Division by zero in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/exception.php on line 19
+[02-Oct-2019 09:31:04 Europe/Berlin] PHP Warning:  Division by zero in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/exception.php on line 19
+[02-Oct-2019 09:31:13 Europe/Berlin] PHP Warning:  Division by zero in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/exception.php on line 19
+[02-Oct-2019 10:24:44 Europe/Berlin] PHP Warning:  Division by zero in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/exception.php on line 13
+[02-Oct-2019 10:25:41 Europe/Berlin] PHP Warning:  Division by zero in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/exception.php on line 13
+[02-Oct-2019 10:33:14 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'error2exception' not found in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/exception.php:13
+Stack trace:
+#0 /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/exception.php(18): error2exception(2, 'Division by zer...', '/home/stagiaire...', 18, Array)
+#1 {main}
+  thrown in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/exception.php on line 13
+[02-Oct-2019 10:35:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'error2exception' not found in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/exception.php:13
+Stack trace:
+#0 /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/exception.php(18): error2exception(2, 'Division by zer...', '/home/stagiaire...', 18, Array)
+#1 {main}
+  thrown in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/exception.php on line 13
+[02-Oct-2019 10:35:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'error2exception' not found in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/exception.php:13
+Stack trace:
+#0 /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/exception.php(18): error2exception(2, 'Division by zer...', '/home/stagiaire...', 18, Array)
+#1 {main}
+  thrown in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/exception.php on line 13
+[02-Oct-2019 10:35:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'error2exception' not found in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/exception.php:13
+Stack trace:
+#0 /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/exception.php(18): error2exception(2, 'Division by zer...', '/home/stagiaire...', 18, Array)
+#1 {main}
+  thrown in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/exception.php on line 13
+[02-Oct-2019 11:04:55 Europe/Berlin] Connection DB
+[02-Oct-2019 11:08:13 Europe/Berlin] Connection DB
+[02-Oct-2019 11:09:09 Europe/Berlin] Connection DB
+[02-Oct-2019 11:11:49 Europe/Berlin] Connection DB
+[02-Oct-2019 11:12:38 Europe/Berlin] Connection DB
+[02-Oct-2019 12:02:22 Europe/Berlin] PHP Parse error:  syntax error, unexpected '/' in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/insert.php on line 73
+[02-Oct-2019 13:39:51 Europe/Berlin] PHP Notice:  Undefined index: id in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/delete.php on line 24
+[02-Oct-2019 14:01:21 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/delete.php on line 59
+[02-Oct-2019 14:19:03 Europe/Berlin] PHP Notice:  Undefined variable: res in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/delete.php on line 38
+[02-Oct-2019 15:01:23 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/liste.php on line 57
+[02-Oct-2019 15:06:05 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/liste.php on line 55
+[02-Oct-2019 15:06:06 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/liste.php on line 55
+[02-Oct-2019 15:11:09 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/liste.php on line 56
+[02-Oct-2019 15:11:10 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/liste.php on line 56
+[02-Oct-2019 15:12:46 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/liste.php on line 56
+[02-Oct-2019 15:12:46 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/liste.php on line 56
+[02-Oct-2019 15:12:47 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/liste.php on line 56
+[02-Oct-2019 15:17:00 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/liste.php on line 56
+[02-Oct-2019 15:18:38 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/liste.php on line 56
+[02-Oct-2019 15:18:39 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/liste.php on line 56
+[02-Oct-2019 15:18:49 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/liste.php on line 55
+[02-Oct-2019 15:18:50 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/liste.php on line 55
+[02-Oct-2019 16:05:57 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/update.php on line 52
+[02-Oct-2019 16:07:11 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/update.php on line 53
+[02-Oct-2019 16:07:16 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/update.php on line 53
+[02-Oct-2019 16:07:22 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/update.php on line 53
+[02-Oct-2019 16:31:24 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(login='zzeee', nom='zz', email='zz@te') WHERE id=6' at line 1 in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/update.php:34
+Stack trace:
+#0 /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/update.php(34): PDOStatement->execute()
+#1 {main}
+  thrown in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/update.php on line 34
+[03-Oct-2019 09:06:59 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(login='bv', nom='bv', email='bv@gmail.com') WHERE id=4' at line 1 in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/update.php:34
+Stack trace:
+#0 /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/update.php(34): PDOStatement->execute()
+#1 {main}
+  thrown in /home/stagiaire/Documents/PHP/PHPORIENTEOBJET/07-PDO/update.php on line 34
