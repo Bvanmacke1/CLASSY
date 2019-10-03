@@ -9,7 +9,6 @@ html, body {
 body{
     width: 600px;
     margin : 0 auto;
-
 }
 
 header, main, footer {
@@ -46,7 +45,6 @@ footer{
 .btn.clicked{
     border: solid 1px orangered;
     color : rgb(149, 95, 76);
-
 }
 .btn:hover{
     background-color: rgb(169, 218, 218);

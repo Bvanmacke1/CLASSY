@@ -28,33 +28,24 @@ function clickHandler(evt) {
 
 function changeStyle() {
     // change le style css
-    console.log('changeStyle');
     const refColor = refInteractivContainer.style.color;
-    console.log('refColor');
-
 
     switch (refColor) {
         case "red":
-            console.log("couleur est définie à rouge");
-            refInteractivContainer.style.color = "green";
+            greenStyle();
             break;
-
         case "green":
-            refInteractivContainer.style.color = "purple";
+            purpleStyle();
             break;
-
         case "purple":
-            refInteractivContainer.style.color = "yellow";
+            yellowStyle();
             break;
-
         case "yellow":
-            refInteractivContainer.style.color = "pink";
+            pinkStyle();
             break;
-
         case "pink":
-            refInteractivContainer.style.color = "red";
+            redStyle();
             break;
-
         case "":
         default:
             console.log('Color non définie');
@@ -64,3 +55,25 @@ function changeStyle() {
     }
 }
 
+function greenStyle() {
+    refInteractivContainer.style.color = "green";
+    refInteractivContainer.style.backgroundColor = "darkgreen";
+}
+function purpleStyle() {
+    refInteractivContainer.style.color = "purple";
+    refInteractivContainer.style.lineHeight= "2em";
+}
+function yellowStyle() {
+    refInteractivContainer.style.color = "yellow";
+    refInteractivContainer.style.padding = "1em";
+}
+function pinkStyle() {
+    refInteractivContainer.style.color = "pink";
+    refInteractivContainer.style.display ="inline";
+}
+function redStyle() {
+    //refInteractivContainer.style.color = "red";
+    refInteractivContainer.style.css = {
+     'color' : 'yelow'
+    };
+}
