@@ -1,0 +1,63 @@
+/* import du reset css */
+@import 'reset.css';
+
+/* import font */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+html, body{
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+header, main, footer{
+    width: 600px;
+    margin: 0 auto;
+    min-height: 50px;
+    padding: 1em;
+
+    background-color: bisque;
+}
+header{
+    margin-top: 1em;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+footer{
+    margin-bottom: 1em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+main{
+    background-color: burlywood;
+}
+
+h1, h2{
+    padding: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2{
+    text-align: left;
+}
+
+.btn{
+    display: block;
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 1em;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ccad85;
+    color:#ffeacf;
+    border: 1px solid #f2d7b3;
+}
+.btn:hover{
+    background-color: #c4a378;
+}
+
+#data-from-get{
+    margin-top: 1em;
+    border: 1px solid bisque;
+    padding: 1em;
+}
+

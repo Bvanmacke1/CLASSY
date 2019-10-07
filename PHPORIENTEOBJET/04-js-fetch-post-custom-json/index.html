@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/img/research.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>JS - XMLHttpRequest - POST JSON FETCH</title>
+</head>
+<body>
+    <header>
+        <h1>JS - XMLHttpRequest - POST JSON FETCH</h1>
+    </header>
+    <main>
+        <h2>Envois de données</h2>
+        <form id="send-new-game" action="assets/bdd/video-games.php" method="post">
+            <fieldset>
+                <label for="game_name">
+                    Nom du jeux:
+                    <input id="game_name" name="game_name" type="text" />
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="game_owner">
+                    Appartient à :
+                    <input id="game_owner" name="game_owner" type="text" />
+                </label>
+            </fieldset>
+            <fieldset>
+                Ce joue sur :
+                <SELECT id="game_console" name="game_console" size="1">
+                    <option value="Gameboy">Gameboy</option>
+                    <option value="NES">NES</option>
+                    <option value="PS2">PS2</option>
+                    <option value="Dreamcast">Dreamcast</option>
+                </SELECT>
+            </fieldset>
+            <fieldset>
+                <label for="game_comment">
+                    Commentaire:
+                    <textarea id="game_comment" name="game_comment" type="text">Votre commentaire</textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Ajouter le jeu">
+        </form>
+        <div id="data-from-get"></div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
