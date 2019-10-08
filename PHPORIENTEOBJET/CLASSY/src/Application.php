@@ -1,6 +1,6 @@
 <?php
 
-require_once SRC_DIR.'/classResponse.php';
+require_once SRC_DIR.'/ClassResponse.php';
 require_once SRC_DIR.'/UrlReader.php';
 
 class Application{
