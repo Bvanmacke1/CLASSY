@@ -1,8 +1,11 @@
 <?php
-// User.php
+// DataBaseConne .php
 
-class User {
-    public $id;
+class DatabaseConnexion {
+    public function connect(){
+        $this->pdo = new PDO ("mysql:host=localhost;dbname=classy", 'dawan', 'dawan', array(PDO::ATTR_ERRMODE =>PDO::ERRMODE_EXCEPTION));
+    }
+   /* public $id;
     public $login;
     public $nom;
     public $email;
@@ -26,8 +29,8 @@ class User {
  $row = $stmt->fetch();
  $this->login = $row['login'];
  $this->nom = $row['nom'];
- $this->email = $row['email'];
+ $this->email = $row['email'];*/
 
 
-    }
+    
 }
