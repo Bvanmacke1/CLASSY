@@ -9,18 +9,15 @@ class UrlReader
         // découpe de l'url sur les "/" trim pour les / du milieu explode pour ceux à l'exterieur
         $uriParts = explode('/', trim($_SERVER['REQUEST_URI'],'/'));
 
-        // passage de paramètre : apple de la fonction match
-        $this->match($uriParts);
-         
+        // passage de paramètre : appel de la fonction match
+                 
         if ($this->match($uriParts)) {
             return intval($uriParts[1]);
         }
-
             // pas de format d'url trouvé
         throw new Exception('URL non reconnue');
     }
-
-       private function match(array $parts)
+       private function match(array $parts): bool
    {
     // url de la forme 'annonce/<numéro>" ?
 
