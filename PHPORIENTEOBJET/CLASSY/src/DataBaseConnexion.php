@@ -8,6 +8,7 @@ class DatabaseConnexion
     private $dsn;
     private $username;
     private $password;
+    private $pdo;
 
     public function __construct(string $dsn, string $username, string $password)
     {
@@ -19,7 +20,11 @@ class DatabaseConnexion
 
     public function connect()
     {
-          new PDO ($dsn, $user, $password, array(PDO::ATTR_ERRMODE =>PDO::ERRMODE_EXCEPTION));
+         $this->pdo = new PDO ($this->dsn, $this->username, $this->password, array(PDO::ATTR_ERRMODE =>PDO::ERRMODE_EXCEPTION));
+    }
+    public function getPdo()
+    {
+        return $this->pdo;
     }
    
 }
