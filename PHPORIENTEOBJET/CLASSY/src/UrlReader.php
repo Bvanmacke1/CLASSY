@@ -3,11 +3,9 @@
 class UrlReader
 {
 
-    public function parse()
+    public function parse(): int
     {
-        //$url = $_SERVER['REQUEST_URI'];
-        // return $url;
-
+        
         // découpe de l'url sur les "/" trim pour les / du milieu explode pour ceux à l'exterieur
         $uriParts = explode('/', trim($_SERVER['REQUEST_URI'],'/'));
 
@@ -15,20 +13,20 @@ class UrlReader
         $this->match($uriParts);
          
         if ($this->match($uriParts)) {
-            return $uriParts[1];
+            return intval($uriParts[1]);
         }
 
             // pas de format d'url trouvé
         throw new Exception('URL non reconnue');
     }
 
-  private function match(array $parts)
+       private function match(array $parts)
    {
     // url de la forme 'annonce/<numéro>" ?
 
-    return count($parts) === 2
-       && $parts[0] === 'annonce'
-       && is_numeric($parts[1]);
+         return count($parts) === 2
+         && $parts[0] === 'annonce'
+         && is_numeric($parts[1]);
    }
 
 }
