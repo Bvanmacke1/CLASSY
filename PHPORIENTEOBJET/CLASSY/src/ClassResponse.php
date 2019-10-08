@@ -2,7 +2,7 @@
 
 class Response
 {     private $body;
-     private $status;
+      private $status;
 
     public function __construct(string $body='', int $status=200)
     {
