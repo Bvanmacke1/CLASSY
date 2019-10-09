@@ -32,7 +32,7 @@ class Application{
          // chargement de l'annonce
          $annonce = $loader->load($id);
          $annonceHtml = new AnnonceHtml();
-         // function build pour afficher le code html
+         // function build pour affic le code html
 
          $response = new Response($annonceHtml->build($annonce));
           }
