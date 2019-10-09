@@ -10,7 +10,7 @@ class AnnonceLoader
     public function __construct(DataBaseConnexion $connexion) 
     {
         // connexion à BD
-         $connexion->connect();
+         
          $this->connexion = $connexion->getPdo();
     }
     public function load(int $id): Annonce

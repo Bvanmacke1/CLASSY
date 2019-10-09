@@ -19,12 +19,15 @@ class DataBaseConnexion
     }
 
 
-    public function connect()
+    private function connect()
     {
          $this->pdo = new \PDO ($this->dsn, $this->username, $this->password, array(\PDO::ATTR_ERRMODE =>\PDO::ERRMODE_EXCEPTION));
     }
-    public function getPdo()
+    public function getPdo(): \PDO
     {
+        if(!$this->pdo){
+            $this->connect();
+        }
         return $this->pdo;
     }
    
