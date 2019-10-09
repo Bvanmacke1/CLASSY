@@ -1,15 +1,13 @@
 <?php
+namespace App;
 
-require_once SRC_DIR.'/AnnonceLoader.php';
-require_once SRC_DIR.'/ClassResponse.php';
-require_once SRC_DIR.'/UrlReader.php';
 
 class Application{
 
     public function run(): Response
     {
          // decoder du json 
-        $config = json_decode(file_get_contents(SRC_DIR.'/../config/database.json'));
+        $config = json_decode(file_get_contents(__DIR__.'/../config/database.json'));
         // creation de l'objet de connexion
         $connexion = new DataBaseConnexion(
              $config->dsn,
@@ -18,7 +16,7 @@ class Application{
             );
 
      // regarder dans l'url
-    $reader = new urlReader();
+         $reader = new UrlReader();
     
        try{
          $id = $reader->parse();
@@ -26,11 +24,9 @@ class Application{
          // chargement de l'annonce
          $annonce = $loader->load($id);
          $response = new Response('coucou ca marche');
-     
-         }
-         catch(Exception $e)
+          }
+         catch(\Exception $e)
          {
-
           $response = new Response ('cette page n\'existe pas', 404);
           // tout est terminé j'arrete : die
           //die;

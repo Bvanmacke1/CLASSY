@@ -1,5 +1,6 @@
 <?php
 // DataBaseConnexion.php
+namespace App;
 
 class DatabaseConnexion 
 {
@@ -20,7 +21,7 @@ class DatabaseConnexion
 
     public function connect()
     {
-         $this->pdo = new PDO ($this->dsn, $this->username, $this->password, array(PDO::ATTR_ERRMODE =>PDO::ERRMODE_EXCEPTION));
+         $this->pdo = new \PDO ($this->dsn, $this->username, $this->password, array(\PDO::ATTR_ERRMODE =>\PDO::ERRMODE_EXCEPTION));
     }
     public function getPdo()
     {

@@ -1,6 +1,5 @@
 <?php
-require_once SRC_DIR.'/Annonce.php'; 
-require_once SRC_DIR.'/DataBaseConnexion.php';
+namespace App;
 
 class AnnonceLoader
 {
@@ -16,7 +15,7 @@ class AnnonceLoader
         $statement = $this->connexion->prepare(
             "SELECT id, title, content, publishedAt FROM Annonce where id=:id"
         );
-        $statement->bindValue(':id', $id, PDO::PARAM_INT);
+        $statement->bindValue(':id', $id, \PDO::PARAM_INT);
         $statement->execute();
 
         $annonce = $statement->fetchObject(Annonce::class); 
