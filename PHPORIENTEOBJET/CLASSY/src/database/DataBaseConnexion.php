@@ -1,8 +1,8 @@
 <?php
 // DataBaseConnexion.php
-namespace App;
+namespace App\database;
 
-class DatabaseConnexion 
+class DataBaseConnexion 
 {
 
     

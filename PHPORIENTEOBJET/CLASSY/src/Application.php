@@ -3,7 +3,10 @@
 namespace App;
 
 use App\Exception\NotFoundException;
-use Apphtml\Annonce;
+use App\html\Annonce as AnnonceHtml;
+use App\database\AnnonceLoader;
+use App\database\DataBaseConnexion;
+
 
 
 class Application{
@@ -23,11 +26,13 @@ class Application{
          $reader = new UrlReader();
     
        try{
+
          $id = $reader->parse();
          $loader = new AnnonceLoader($connexion);
          // chargement de l'annonce
          $annonce = $loader->load($id);
-         $annonceHtml = new Annonce();
+         $annonceHtml = new AnnonceHtml();
+         // function build pour afficher le code html
 
          $response = new Response($annonceHtml->build($annonce));
           }

@@ -5,8 +5,9 @@ namespace App\html;
 
 class Annonce
 {
-    public function build(\App\Annonce $annonce)
+    public function build(\App\Annonce $annonce): string
     {
-     return '<h1>'.$annonce->title.'</h1><div>'.$annonce->content.'</div>';
+     return '<h1>'.$annonce->title.'</h1><div>'
+     .$annonce->content.'</div>';
     }
 }

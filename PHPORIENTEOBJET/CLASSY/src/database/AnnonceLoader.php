@@ -1,8 +1,8 @@
 <?php
-namespace App;namespace App;
+namespace App\database;
 
 use App\Exception\NotFoundException;
-
+use App\Annonce;
 
 
 class AnnonceLoader
