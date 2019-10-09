@@ -1,5 +1,8 @@
 <?php
+
 namespace App;
+
+use App\Exception\NotFoundException;
 
 
 class Application{
@@ -8,7 +11,7 @@ class Application{
     {
          // decoder du json 
         $config = json_decode(file_get_contents(__DIR__.'/../config/database.json'));
-        // creation de l'objet de connexion
+        // creation de l'objet de connexionuse App\Exception\NotFoundException;
         $connexion = new DataBaseConnexion(
              $config->dsn,
              $config->username, 
@@ -25,9 +28,9 @@ class Application{
          $annonce = $loader->load($id);
          $response = new Response('coucou ca marche');
           }
-         catch(\Exception $e)
+         catch(NotFoundException $e)
          {
-          $response = new Response ('cette page n\'existe pas', 404);
+          $response = new Response ($e->getMessage(), 404);
           // tout est terminé j'arrete : die
           //die;
           }

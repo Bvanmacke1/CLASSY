@@ -14,5 +14,8 @@
             "App\\": "src/"
         }
     },
-    "require": {}
+    "require": {
+        "php": "~7.2",
+        "ext-json": "*"
+    }
 }
