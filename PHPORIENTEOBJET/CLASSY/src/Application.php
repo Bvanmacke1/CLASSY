@@ -11,12 +11,12 @@ use App\database\DataBaseConnexion;
 
 class Application{
 
-    public function run(): Response
+    public function run()
     {
          // decoder du json 
         $config = json_decode(file_get_contents(__DIR__.'/../config/database.json'));
-        // creation de l'objet de connexionuse App\Exception\NotFoundException;
-        $connexion = new DataBaseConnexion(
+        // creation de l'objet de connexion
+        $connection = new DataBaseConnexion(
              $config->dsn,
              $config->username, 
              $config->password
@@ -27,14 +27,14 @@ class Application{
     
        try{
 
-         $id = $reader->parse();
-         $loader = new AnnonceLoader($connexion);
-         // chargement de l'annonce
-         $annonce = $loader->load($id);
-         $annonceHtml = new AnnonceHtml();
-         // function build pour affic le code html
+           $config = $reader->parse();
+           $controller = new Controller($connection);
 
-         $response = new Response($annonceHtml->build($annonce));
+           $response = call_user_func_array([$controller, $config->getMethod()],
+           $config->getArgs()
+           );
+
+
           }
          catch(NotFoundException $e)
          {

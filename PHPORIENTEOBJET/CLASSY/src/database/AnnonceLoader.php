@@ -7,27 +7,39 @@ use App\Annonce;
 
 class AnnonceLoader
 {
-    public function __construct(DataBaseConnexion $connexion) 
+    public function __construct(DataBaseConnexion $connection)
     {
         // connexion à BD
          
-         $this->connexion = $connexion->getPdo();
+         $this->connection = $connection->getPdo();
     }
     public function load(int $id): Annonce
     {
         // preparation de la requete avec un parametre :id
-        $statement = $this->connexion->prepare(
+        $statement = $this->connection->prepare(
             "SELECT id, title, content, publishedAt FROM Annonce where id=:id"
         );
         $statement->bindValue(':id', $id, \PDO::PARAM_INT);
         $statement->execute();
 
-        $annonce = $statement->fetchObject(Annonce::class); 
+        $annonce = $statement->fetchObject(Annonce::class);
 
-        if(!$annonce){
+        if (!$annonce) {
             throw new NotFoundException ('Cette annonce n\'existe pas');
         }
-        
+
         return $annonce;
     }
-}
+        public function loadAll(): array
+        {
+            // preparation de la requete avec un parametre :id
+            $statement = $this->connection->prepare(
+                "SELECT id, title, content, publishedAt FROM Annonce "
+            );
+
+            $statement->execute();
+
+            $annonces = $statement->fetchAll(\PDO::FETCH_CLASS, Annonce::class);
+            return $annonces;
+        }
+    }
