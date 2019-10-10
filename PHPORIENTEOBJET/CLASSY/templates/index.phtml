@@ -10,7 +10,9 @@
 <h1>Liste des annonces</h1>
 <ul>
     <?php foreach($annonces as $annonce): ?>
-        <li><a href="/annonce/<?= $annonce->id ?>"><?=$annonce->title ?></a></li>
+        <li>
+            <a href="/annonce/<?= $annonce->id ?>"><?=$annonce->title ?></a>
+        </li>
 
     <?php endforeach; ?>
 </ul>

@@ -3,8 +3,6 @@
 namespace App;
 
 use App\Exception\NotFoundException;
-use App\html\Annonce as AnnonceHtml;
-use App\database\AnnonceLoader;
 use App\database\DataBaseConnexion;
 
 
@@ -33,7 +31,6 @@ class Application{
            $response = call_user_func_array([$controller, $config->getMethod()],
            $config->getArgs()
            );
-
 
           }
          catch(NotFoundException $e)

@@ -3,41 +3,50 @@
 
 namespace App;
 
-use App\database\AnnonceLoaderListe;
+
 use App\database\AnnonceLoader;
 use App\database\DataBaseConnexion;
 use App\html\Annonce as AnnonceHtml;
-use App\html\AnnonceListe as AnnonceHtml1;
+
 
 class Controller
 {
 
     private $connection;
+    /**
+     * @var AnnonceLoader
+     */
+    private $loader;
+    private $annonceHtml;
 
     public function __construct(DataBaseConnexion $connection)
 
     {
            $this->connection = $connection;
+           $this->loader = new AnnonceLoader($connection);
+           $this->annonceHtml = new AnnonceHtml();
     }
 
     public function index()
     {
+        $annonces = $this->loader->loadAll();
 
-        $loader = new AnnonceLoader($this->connection);
-        $annonces = $loader->loadAll();
-        //var_dump($annonceListe);
-        $annonceHtml = new AnnonceHtml();
-
-       return new Response($annonceHtml->buildAll($annonces));
+               return new Response($this->annonceHtml->loadTemplate(
+                   '/templates/index.phtml', [
+                   'annonces' => $annonces,
+               ]
+               ));
 
     }
 
     public function show(int $id): Response
     {
-        $loader = new AnnonceLoader($this->connection);
-        $annonce = $loader->load($id);
-        $annonceHtml = new AnnonceHtml();
-        return new Response($annonceHtml->build($annonce));
+        $annonce = $this->loader->load($id);
+                return new Response($this->annonceHtml->loadTemplate(
+                '/templates/annonce.phtml', [
+                'annonce' => $annonce,
+        ]
+    ));
 
     }
 }
