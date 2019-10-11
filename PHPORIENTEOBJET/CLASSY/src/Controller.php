@@ -49,4 +49,11 @@ class Controller
     ));
 
     }
+    public function indexRest()
+    {
+        $annonceArray = $this->loader->loadRest();
+
+        return new Response(json_encode($annonceArray), 200, 'application/json');
+
+    }
 }

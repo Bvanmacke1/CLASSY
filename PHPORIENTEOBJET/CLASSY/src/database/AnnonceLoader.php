@@ -42,4 +42,18 @@ class AnnonceLoader
             $annonces = $statement->fetchAll(\PDO::FETCH_CLASS, Annonce::class);
             return $annonces;
         }
+
+        public function loadRest(): array
+        {
+            // preparation de la requete avec un parametre :id
+            $statement = $this->connection->prepare(
+                "SELECT id, title, CONCAT('/annonce/', id) AS url FROM Annonce"
+            );
+
+            $statement->execute();
+
+            $annonces = $statement->fetchAll(\PDO::FETCH_ASSOC);
+
+            return $annonces;
+        }
     }

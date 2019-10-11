@@ -36,6 +36,21 @@ class UrlReader
                'method' => 'show',
                'args' => ['id' => intval($parts[1])],
                 ]);
+
+
+       }
+
+       // url de la forme 'annonce/<numéro>" ?
+       if (count($parts) === 2
+           && $parts[0] === 'api'
+           && $parts[1] === 'annonce'
+                  ){
+           return new PageConfig([
+               'method' => 'indexRest',
+               'args' => [],
+           ]);
+
+
        }
        // pas de format trouve
 
